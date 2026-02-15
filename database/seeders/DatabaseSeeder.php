@@ -122,7 +122,7 @@ class DatabaseSeeder extends Seeder
                 'model' => '327',
                 'color' => 'Blue',
                 'price' => 109.99,
-                'image_url' => 'https://prod.kuoe.at/new+balance-herren+sneaker+327-1-768_1024_75-7573259_1.webp',
+                'image_url' => 'https://img.joomcdn.net/453acae898befc22688e946cadbe220dd8a3734d_1024_1024.jpeg',
                 'description' => 'Retro runner with modern updates.',
             ],
             // Converse sneakers

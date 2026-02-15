@@ -1,13 +1,13 @@
 <x-layouts.site title="SneakerApp">
     <div class="stack">
         <div class="card">
-            <h1>Sneaker Collection</h1>
+            <h1>Sneaker World New Collection</h1>
             <p class="muted">The Best Sneakers in the world.</p>
             
-            <!-- Search and Filters -->
-            <form method="GET" action="{{ route('sneakers.index') }}" class="stack" style="margin-top: 16px; gap: 12px;">
-                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; align-items: end;">
-                    <div>
+            <!-- Search -->
+            <form method="GET" action="{{ route('sneakers.index') }}" style="margin-top: 16px;">
+                <div style="display: flex; gap: 8px; align-items: end;">
+                    <div style="flex: 1;">
                         <label for="search" style="font-weight: 600; display: block; margin-bottom: 6px;">Search</label>
                         <input 
                             id="search" 
@@ -19,28 +19,12 @@
                         >
                     </div>
                     <div>
-                        <label for="brand" style="font-weight: 600; display: block; margin-bottom: 6px;">Filter by Brand</label>
-                        <select id="brand" name="brand" style="width: 100%;">
-                            <option value="">All Brands</option>
-                            @foreach($brands as $brand)
-                                <option value="{{ $brand }}" {{ request('brand') == $brand ? 'selected' : '' }}>{{ $brand }}</option>
-                            @endforeach
-                        </select>
+                        <button class="btn" type="submit">Search</button>
                     </div>
-                    <div>
-                        <label for="color" style="font-weight: 600; display: block; margin-bottom: 6px;">Filter by Color</label>
-                        <select id="color" name="color" style="width: 100%;">
-                            <option value="">All Colors</option>
-                            @foreach($colors as $color)
-                                <option value="{{ $color }}" {{ request('color') == $color ? 'selected' : '' }}>{{ $color }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
-                <div style="display: flex; gap: 8px;">
-                    <button class="btn" type="submit">Apply Filters</button>
-                    @if(request('search') || request('brand') || request('color'))
-                        <a class="btn secondary" href="{{ route('sneakers.index') }}">Clear All</a>
+                    @if(request('search'))
+                        <div>
+                            <a class="btn secondary" href="{{ route('sneakers.index') }}">Clear</a>
+                        </div>
                     @endif
                 </div>
             </form>
@@ -127,7 +111,7 @@
         @if($sneakers->isEmpty())
             <div class="card" style="text-align: center; padding: 40px;">
                 <h2 style="color: #6b7280; margin-bottom: 12px;">No sneakers found</h2>
-                <p class="muted">Try adjusting your search or filters.</p>
+                <p class="muted">Try adjusting your search.</p>
             </div>
         @endif
     </div>

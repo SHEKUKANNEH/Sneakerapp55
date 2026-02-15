@@ -215,7 +215,7 @@ class DatabaseSeeder extends Seeder
             // More Converse sneakers
             ['brand' => 'Converse', 'model' => 'Converse Shai', 'color' => 'White', 'price' => 64.99, 'image_url' => 'https://assets.footlocker.com/is/image/FLDM/314109514704_01?fmt=webp-alpha&bfc=on&wid=500&hei=500', 'description' => 'Classic low-top canvas sneaker.'],
             ['brand' => 'Converse', 'model' => 'Chuck Taylor High', 'color' => 'Navy', 'price' => 74.99, 'image_url' => 'https://assets.footlocker.com/is/image/FLDM/314512266504_01?fmt=webp-alpha&bfc=on&wid=500&hei=500', 'description' => 'Iconic high-top canvas sneaker.'],
-            ['brand' => 'Converse', 'model' => 'Run Star', 'color' => 'Black/White', 'price' => 99.99, 'image_url' => 'https://assets.footlocker.com/is/image/FLDM/315550901102_01?fmt=webp-alpha&bfc=on&wid=500&hei=500', 'description' => 'Platform sneaker with chunky sole.'],
+            ['brand' => 'Converse', 'model' => 'Run Star', 'color' => 'Black', 'price' => 99.99, 'image_url' => 'https://img.modivo.cloud/product(8/1/9/d/819d6690f233801d3f6260fae096f5cac594734e_20_0194435159515.jpg,webp)/converse-sneakers-aus-stoff-chuck-taylor-all-star-tectuff-a09485c-schwarz-0000304944758.webp0', 'description' => 'Platform sneaker with chunky sole.'],
             ['brand' => 'Converse', 'model' => 'Jack Purcell', 'color' => 'Blue', 'price' => 79.99, 'image_url' => 'https://assets.footlocker.com/is/image/FLDM/314512278004_01?fmt=webp-alpha&bfc=on&wid=500&hei=500', 'description' => 'Tennis-inspired classic sneaker.'],
             
             // More Reebok sneakers

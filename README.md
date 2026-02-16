@@ -172,56 +172,6 @@ User (1) ──< (Many) Order (Many) >── (1) Sneaker
 - Composer
 - Herd (or any local PHP server)
 - Git
-
-### Step-by-Step Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/sneakerapp.git
-   cd sneakerapp
-   ```
-
-2. **Install dependencies**
-   ```bash
-   composer install
-   npm install
-   ```
-
-3. **Environment setup**
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-
-4. **Database setup**
-   ```bash
-   php artisan migrate:fresh --seed
-   ```
-   This will:
-   - Create all database tables
-   - Seed 48+ sneakers with unique images
-   - Create an admin user (email: `admin@sneakerapp.test`, password: `password`)
-   - Create 2 regular users
-   - Create sample orders
-
-5. **Build frontend assets**
-   ```bash
-   npm run build
-   ```
-
-6. **Start the development server**
-   ```bash
-   php artisan serve
-   # Or using Herd, navigate to your project directory
-   ```
-
-7. **Access the application**
-   - Home page: `http://127.0.0.1:8000/`
-   - Login: `http://127.0.0.1:8000/login`
-   - Register: `http://127.0.0.1:8000/register`
-
-## 📖 Usage
-
 ### Default Credentials
 
 **Admin User:**
@@ -429,26 +379,13 @@ Each sneaker has:
 - **Blade Components**: Reusable view components
 - **RESTful Routes**: Standard Laravel resource routes
 
-## 🚧 Future Enhancements
-
-Potential features to add:
-- Payment integration
-- Shopping cart functionality
-- Order status tracking
-- Email notifications
-- User profiles
-- Product reviews and ratings
-- Image upload instead of URLs
-- Advanced filtering (price range, size)
-- Wishlist functionality
-
 ## 📄 License
 
 This project is open-source and available for educational purposes.
 
 ## 👨‍💻 Author
 
-Built as a learning project for Laravel beginners.
+Built as a learning project for Laravel beginners by Sheku Kanneh
 
 ## 🙏 Acknowledgments
 

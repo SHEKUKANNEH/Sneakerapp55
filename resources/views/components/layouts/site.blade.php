@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title ?? 'SneakerApp' }}</title>
         <style>
-            body { font-family: Arial, Helvetica, sans-serif; background: #f6f7fb; margin: 0; color: #1f2937; }
-            header { background: #111827; color: #fff; }
+            body { font-family: Arial, Helvetica, sans-serif; background: #4c588b; margin: 0; color: #1f2937; }
+            header { background: #384258; color: #e97272; }
             .container { max-width: 960px; margin: 0 auto; padding: 20px; }
             nav { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
             nav a { color: #fff; text-decoration: none; font-weight: 600; }

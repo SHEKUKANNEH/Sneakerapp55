@@ -18,7 +18,7 @@
             .btn.secondary { background: #fff; color: #111827; }
             .btn.danger { background: #b91c1c; border-color: #b91c1c; }
             form.inline { display: inline; }
-            input, textarea, select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #d1d5db; }
+            input, textarea, select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #3b82f6; }
             label { font-weight: 600; display: block; margin-bottom: 6px; }
             .stack { display: grid; gap: 12px; }
             .flash { padding: 10px 14px; background: #dcfce7; border: 1px solid #86efac; border-radius: 6px; margin-bottom: 12px; }

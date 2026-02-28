@@ -175,7 +175,7 @@ User (1) ──< (Many) Order (Many) >── (1) Sneaker
 ### Default Credentials
 
 **Admin User:**
-- Email: `admin@sneakerapp.test`
+- Email: `admin@admin.com`
 - Password: `password`
 
 **Regular Users:**

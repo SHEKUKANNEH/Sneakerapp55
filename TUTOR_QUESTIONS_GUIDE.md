@@ -1,4 +1,4 @@
-# Tutor Questions & Commands Guide
+# Questions & Commands Guide
 
 ## 📚 Potential Tutor Questions About Your Backend
 

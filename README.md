@@ -350,7 +350,7 @@ The `AdminMiddleware` protects admin-only routes:
 ## 🧪 Seeded Data
 
 The database seeder creates:
-- **1 Admin User**: `admin@sneakerapp.test` / `password`
+- **1 Admin User**: `admin@admin.com` / `password`
 - **2 Regular Users**: Randomly generated
 - **48+ Sneakers**: Diverse brands (Nike, Adidas, Puma, New Balance, Converse, Reebok)
 - **Sample Orders**: Orders linking users to sneakers

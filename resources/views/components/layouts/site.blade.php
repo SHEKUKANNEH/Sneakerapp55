@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title ?? 'SneakerApp' }}</title>
         <style>
-            body { font-family: Arial, Helvetica, sans-serif; background: #4c588b; margin: 0; color: #1f2937; }
-            header { background: #384258; color: #e97272; }
+            body { font-family: Arial, Helvetica, sans-serif; background: #d1d5e6; margin: 0; color: #1f2937; }
+            header { background: #384258; color: #943a3a; }
             .container { max-width: 960px; margin: 0 auto; padding: 20px; }
             nav { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
             nav a { color: #fff; text-decoration: none; font-weight: 600; }
             nav a:hover { text-decoration: underline; }
             .nav-right { margin-left: auto; display: flex; gap: 14px; align-items: center; }
-            .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+            .card { background: #62a19a; border-radius: 10px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
             .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-            .btn { display: inline-block; padding: 8px 12px; border-radius: 6px; border: 1px solid #111827; background: #111827; color: #fff; text-decoration: none; font-weight: 600; }
-            .btn.secondary { background: #fff; color: #111827; }
+            .btn { display: inline-block; padding: 8px 12px; border-radius: 9px; border: 1px solid #ccd5e9; background: #3a9b49; color: #fff; text-decoration: none; font-weight: 600; }
+            .btn.secondary { background: #fff; color: #33972b; }
             .btn.danger { background: #b91c1c; border-color: #b91c1c; }
             form.inline { display: inline; }
             input, textarea, select { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #3b82f6; }
@@ -24,8 +24,8 @@
             .flash { padding: 10px 14px; background: #dcfce7; border: 1px solid #86efac; border-radius: 6px; margin-bottom: 12px; }
             .error { color: #b91c1c; font-size: 0.9rem; }
             img.sneaker { width: 100%; border-radius: 8px; aspect-ratio: 4 / 3; object-fit: cover; }
-            .muted { color: #6b7280; }
-            .toast { position: fixed; top: 20px; right: 20px; background: #10b981; color: #fff; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: flex; align-items: center; gap: 12px; min-width: 250px; animation: slideIn 0.3s ease-out; }
+            .muted { color: #f5f5f5; }
+            .toast { position: fixed; top: 20px; right: 20px; background: #b9dfd3; color: #fff; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000; display: flex; align-items: center; gap: 12px; min-width: 250px; animation: slideIn 0.3s ease-out; }
             .toast.hiding { animation: slideOut 0.3s ease-in forwards; }
             @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
             @keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }

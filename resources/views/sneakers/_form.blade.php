@@ -21,7 +21,7 @@
         @enderror
     </div>
     <div>
-        <label for="price">Price</label>
+        <label for="price">Price (€)</label>
         <input id="price" name="price" type="number" step="0.01" value="{{ old('price', $sneaker->price ?? '') }}">
         @error('price')
             <div class="error">{{ $message }}</div>

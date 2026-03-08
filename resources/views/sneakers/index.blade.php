@@ -50,15 +50,15 @@
                             <form class="inline-price-form" method="POST" action="{{ route('sneakers.updatePrice', $sneaker) }}" style="display: flex; gap: 8px; align-items: center; margin: 8px 0;">
                                 @csrf
                                 @method('PATCH')
-                                <label for="price-{{ $sneaker->id }}" style="font-weight: 600; margin: 0;">$</label>
+                                <label for="price-{{ $sneaker->id }}" style="font-weight: 600; margin: 0;">€</label>
                                 <input id="price-{{ $sneaker->id }}" name="price" type="number" step="0.01" value="{{ $sneaker->price }}" style="width: 80px; padding: 4px 8px; margin: 0;">
                                 <button class="btn" type="submit" style="padding: 4px 8px; font-size: 0.85rem;">Update</button>
                             </form>
                         @else
-                            <strong>${{ number_format($sneaker->price, 2) }}</strong>
+                            <strong>€{{ number_format($sneaker->price, 2) }}</strong>
                         @endif
                     @else
-                        <strong>${{ number_format($sneaker->price, 2) }}</strong>
+                        <strong>€{{ number_format($sneaker->price, 2) }}</strong>
                     @endauth
                     
                     <div class="stack" style="margin-top: 10px;">
@@ -157,4 +157,3 @@
         });
     </script>
 </x-layouts.site>
-

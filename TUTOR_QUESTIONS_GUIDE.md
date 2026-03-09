@@ -1,6 +1,6 @@
 # Questions & Commands Guide
 
-## 📚 Potential Tutor Questions About Your Backend
+
 
 ### **1. Models & Relationships**
 
